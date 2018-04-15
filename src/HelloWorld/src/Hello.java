@@ -1,10 +1,14 @@
 public class Hello {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         System.out.print(String.format("Hello, %s", Constant.FIRST_NAME));
         System.out.print(Constant.kilograms + "\n");
         System.out.println(Constant.registerSymbol);
+        if (Constant.remainder <= 20d) {
+            System.out.println("Total was over the limit");
+        }
     }
 }
+
 class Constant {
     public static final String FIRST_NAME = "Anthony";
 
@@ -20,4 +24,11 @@ class Constant {
 
     //019 Getting to Know Primitives
     static char registerSymbol = '\u00AE';
+
+    //022 More on Operators
+    static double val1 = 20;
+    static double val2 = 80;
+    static double result = (val1 + val2) * 25;
+    static double remainder = result % 40;
+
 }
