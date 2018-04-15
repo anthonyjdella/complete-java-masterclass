@@ -1,7 +1,8 @@
 public class Hello {
     public static void main(String [] args) {
         System.out.print(String.format("Hello, %s", Constant.FIRST_NAME));
-        System.out.print(Constant.kilograms);
+        System.out.print(Constant.kilograms + "\n");
+        System.out.println(Constant.registerSymbol);
     }
 }
 class Constant {
@@ -16,4 +17,7 @@ class Constant {
     //018 Getting to Know Primitives
     static int pounds = 2;
     static double kilograms = (pounds * .45359237);
+
+    //019 Getting to Know Primitives
+    static char registerSymbol = '\u00AE';
 }
